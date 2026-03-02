@@ -2,12 +2,14 @@
 * {
   user-select: none;
 }
+
 /* BODY--------------------------------------------------------------------*/
 body{
     background-image: url(fundo.jpg);
     background-size: cover;
     background-position: center;
     height: 90dvh;
+    margin: 10px 0px 0px 0px;
 }
 /* MAIN--------------------------------------------------------------------*/
 main{
@@ -28,14 +30,24 @@ main{
     border-radius: 10px;
     max-width: 1050px;
     min-width: 300px;
-    padding: 10px;
+    padding: 0px;
+    padding-bottom: 10px;
     margin: auto;
     box-shadow: 20px;
     border: solid #ffffff;
-    transform: scale(0.81);
+    transform: scale(0.99);
     transform-origin: top center;
 }
+main.zoom2:hover{
+    transform: scale(1.0); /* aumenta 10% */
 }
+body{
+    margin: 0px;
+}
+}
+
+
+
 /* VIDEO--------------------------------------------------------------------*/
 div.video{
     background-color: var(--cor05);
@@ -99,8 +111,8 @@ p{
     color: aliceblue;
     font-family: 'Courier New', Courier, monospace;
     font-size: 22px;
-    margin-left: 10px;
-    margin-right: 10px;
+    margin-left: 12px;
+    margin-right: 12px;
 }
 
 

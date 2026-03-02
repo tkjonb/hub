@@ -24,6 +24,7 @@ main{
     transform: scale(0.8);
     transform-origin: top center;
 }
+/* RESPONSIVIDADE--------------------------------------------------------------------*/
 @media screen and (max-width: 850px){
 main{
     background-color: rgba(0, 0, 0, 0.668);
@@ -44,10 +45,48 @@ main.zoom2:hover{
 body{
     margin: 0px;
 }
+/* FOTO DE PERFIL --------------------------------------------------------------------*/
+div.main {
+    position: relative;
+    width: 100%;
+    max-width:200px; /* tamanho máximo opcional */
+    margin: 0 auto;   /* centraliza a div */
+}
+
+div.main > img.img-back {
+    width: 100%;      /* ambas ficam responsivas */
+    display: block;
 }
 
 
+/* imagem de baixo */
+img.img-back {
+    position: relative; /* fica na base */
+    border-radius: 400px;
+}
 
+/* imagem de cima */
+img.img-front {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 85%; /* tamanho da imagem de cima */
+    transform: translate(-50%, -50%);
+    pointer-events: auto; /* deixa o hover funcionar */
+    border-radius: 400px;
+}
+/* ICONS --------------------------------------------------------------------*/
+img.icons2{
+    width: 110px;
+   
+}
+img.icons{
+    width: 70px;
+}
+img.icons3{
+    width: 50px;
+}
+}
 /* VIDEO--------------------------------------------------------------------*/
 div.video{
     background-color: var(--cor05);
@@ -98,13 +137,14 @@ h1{
     font-size: 50px;
     color: aliceblue;
     text-align: center;
+    padding: 0px;
+    margin: 10px 0px 0px 0px;
 }
 h2{
     color: #ff77c9;
     text-align: center;
     font-family: 'Courier New', Courier, monospace;
     font-size: 35px;
-    
 }
 p{
     text-align: center;
@@ -123,6 +163,9 @@ p{
 }
 .icons{
     width: 100px;
+}
+.icons3{
+    width: 70px;
 }
 /* FOTO DE PERFIL --------------------------------------------------------------------*/
 .main {
